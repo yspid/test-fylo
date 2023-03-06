@@ -1,0 +1,140 @@
+:root {
+  --dark-blue1: hsl(217, 28%, 15%);
+  --dark-blue2: hsl(218, 28%, 13%);
+  --dark-blue3: hsl(216, 53%, 9%);
+  --darkblue4: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --lightred: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark-blue1);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-items: center;
+  margin: 30px 10px;
+}
+
+/* nav div{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+} */
+
+nav div{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  /* margin: 10% 10px; */
+}
+
+nav img{
+  width: 100px;
+}
+
+/* ----------section1------- */
+
+.section1 img{
+  width: 90%;
+  max-width: 400px;
+}
+
+.section1{
+  background-image: url(./images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+@media (min-width:768){
+  .section1 {
+    background-image: url(./images/bg-curvy-desktop.svg);
+  }
+}
+
+.section1 div {
+  color: var(--white);
+  text-align: center;
+  max-width: 500px;
+  margin: 0px auto;
+}
+
+.section1 button{
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  width: 150px;
+  border-radius: 25px;
+  border: 0px;
+}
+
+/* psuedo selector */
+
+.section1 button:hover{
+  background-color: var(--cyan);
+}
+
+/* 2--
+===========section----- */
+
+.section2 {
+  background-color: var(--dark-blue2);
+  padding: 60px 0;
+}
+
+.inner-section2{
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.inner-section2{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+@media (min-width: 786px) {
+  .inner-section2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* @media(min-width:900px){
+    .section2{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}  */
+
+/* ====================== Section2 ====================  */
+  
+
+
+
+ 
+
+
+
+
+
+
+
